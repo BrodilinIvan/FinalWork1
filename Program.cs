@@ -30,5 +30,15 @@ if (str != "")
         }    
     }
     if (j == 0) Console.WriteLine("В данном массиве отсутствуют требуемые элементы!");
+    Console.Write("Результат -> ");
+    PrintArray(newArray);
 }
 else Console.WriteLine("Нужно было, что-то написать!");
+
+void PrintArray(string[] inArray)
+{
+    for (int i = 0; i < inArray.Length; i++)
+    {
+        Console.Write($"{inArray[i]} ");
+    }
+}
